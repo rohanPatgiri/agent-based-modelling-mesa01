@@ -1,3 +1,10 @@
+
+import mesa
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+......
+## SECTION 1
 These are the required imports:
 
 mesa: A Python framework for agent-based modeling
@@ -7,12 +14,13 @@ matplotlib.pyplot: For visualization
 
 ---
 class Sugar(mesa.Agent):
-  #- contains an amount of sugar
-  # Grows one amount of sugar each turn
+  - contains an amount of sugar
+   Grows one amount of sugar each turn
   def __init__(self):
     print("I am sugar")
 
 ........
+## SECTION 2
 This is a basic Sugar class that:
 
 Inherits from mesa.Agent
@@ -25,6 +33,7 @@ class Spice(mesa.Agent):
     def __init__(self):
       print("I am spice")
 ......
+## SECTION 3
 Similar to Sugar class:
 
 Also inherits from mesa.Agent
@@ -33,10 +42,11 @@ Completely skeletal implementation
 Also missing proper agent initialization
 
 ---
+## SECTION 4
 class Trader(mesa.Agent):
-  # Trader
-  # - has a metabolism for sugar and spice
-  # - harvests and trades sugar and spice to survive and thrive
+   Trader
+   - has a metabolism for sugar and spice
+  - harvests and trades sugar and spice to survive and thrive
   def __init__(self):
     print("I am a trader")
 
@@ -71,7 +81,7 @@ class SugarScapeG1mt(mesa.Model):
     plt.imshow(spice_distribution, origin="lower")
 
 ...............
-
+## SECTION 5
 The main model class:
 
 Inherits from mesa.Model
