@@ -1,0 +1,2 @@
+- In session 6 we have we have finished agentizing our landscape.
+- Next, we are going to instantiate our  trader class and start building out our trades.
